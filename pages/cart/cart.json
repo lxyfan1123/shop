@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "form": "/components/form/form",
+      "custom": "/components/custom/custom"
+  },
+  "navigationBarTitleText": "购物车"
+} 

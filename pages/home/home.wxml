@@ -1,0 +1,5 @@
+<!--pages/home/home.wxml-->
+<import src="/template/login/index.wxml"/> 
+<template is="msgItem" data="{{...item}}"/>
+<w-swiper list="{{banners}}" />
+<template is='shopTemplate' data='{{...item}}' />

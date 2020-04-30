@@ -1,0 +1,56 @@
+<!--pages/cart/cart.wxml-->
+<!-- <button type="primary" bindtap="takePhoto">拍照</button> -->
+<view>{{nameTrans}}</view>
+<view>{{msg}}</view>
+<!-- <view wx:if="{{lock}}">
+  <view wx:for="{{goodsRecommend}}" wx:key="index">
+          <view>最爱吃的水果是{{item}}</view>
+      </view>  
+</view> -->
+<!--数层循环展示数据-->
+  <view wx:for="{{twoList}}" wx:key="id">
+          <view>{{index+1}}、{{item.name}}</view>
+          <view wx:for="{{item.twodata}}" wx:for-item="twodata" wx:key="id">
+            {{twodata.name}}
+          </view>
+      </view>  
+<view>
+<view>问卷汇总列表：</view>
+<view wx:for="{{disData}}" wx:key="index">
+  <view>疾病名称：{{item.disName}}</view>
+  <view wx:for="{{item.questions}}" wx:for-item="questions" wx:key="index">
+    <view>问题：{{questions.ques}}</view>
+    <view>回答：{{questions.ans}}</view>
+  </view>
+</view>
+  <text class="row-label">性别{{peisongType}}</text>
+  <view class="sexRadio">
+    <radio-group bindchange="sexChange">
+            <label class="radio">
+                    <radio value="M" checked="{{peisongType == 'M'}}" /> 男
+            </label>
+            <label class="radio">
+                    <radio value="F" checked="{{peisongType == 'F'}}" /> 女
+            </label>
+    </radio-group>
+  </view>
+</view>
+<view>       
+  <view>服务类型{{type}}</view>
+  <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{typeItems}}" wx:key="value">
+     <view> 
+        <radio value="{{item.value}}" checked="{{item.checked}}"/> {{item.name}}
+      </view>
+      </label>
+  </radio-group>
+</view>
+<button class="tous" bindtap="goshop">跳转到其他栏目</button>
+<view class="section section_gap">
+        <view class="section__title">slider</view>
+        <slider name="slider" show-value step="5"></slider>
+</view>
+<form bind:myEvent="onMyEvent" paramAtoB="{{copyRemark}}"></form>
+<!-- <custom model:my-value="{{pageValue}}" />{{myValue}} -->
+
+

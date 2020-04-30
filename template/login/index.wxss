@@ -1,0 +1,19 @@
+/* template/login/index.wxss */
+
+.shopTemplate{
+  /* width: 300rpx; */
+  height: 300rpx;
+  border: 1px solid #ccc;
+  background-color: #c1c1c1;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin: 50rpx;
+}
+.shopTemplate_name{
+  height: 200rpx;
+  /* display: block; */
+}
+.shopTemplate_price{
+  height: 100rpx;
+  /* display: block */
+}

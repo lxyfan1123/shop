@@ -1,0 +1,2 @@
+/* pages/profile/profile.wxss */
+@import "/template/login/index.wxss";

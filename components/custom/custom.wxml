@@ -1,0 +1,2 @@
+<!--components/custom/custom.wxml-->
+<input model:value="{{myValue}}" placeholder="输入内容" />

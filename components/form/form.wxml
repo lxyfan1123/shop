@@ -1,0 +1,17 @@
+<!--components/form/form.wxml-->
+<text>自定义子组件</text>
+<button bindtap="onTap">按钮</button>
+ <view class="page-section">
+    <view class="weui-cells__title">可以自动聚焦的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="输入姓名" value="{{name}}" bindinput="inputEdit"/>
+      </view>
+    </view>
+  </view>
+  <view>{{paramAtoB}}</view>
+  <view>价格：{{price}}</view>
+  <view>
+  数量：<input type="numbner" value="{{amount}}" bindinput="changee"/>
+  </view>
+<view>总价:{{priceall}}</view>

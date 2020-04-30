@@ -1,0 +1,2 @@
+/* pages/home/home.wxss */
+@import "/template/login/index.wxss"

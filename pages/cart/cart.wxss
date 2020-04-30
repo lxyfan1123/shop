@@ -1,0 +1,9 @@
+/* pages/cart/cart.wxss */
+.sexRadio{
+  display:inline-block;
+  float:right;
+}
+.tous{
+  width:300rpx;
+  height:100rpx;
+}

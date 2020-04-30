@@ -1,0 +1,3 @@
+<!--pages/profile/profile.wxml-->
+<import src="/template/login/index.wxml"/> 
+<template is='shopTemplate' data='{{...item}}' />

@@ -1,0 +1,23 @@
+<template name='shopTemplate'>
+  <view class='shopTemplate'>
+    <view class='shopTemplate_name'>
+      <view>商品名称：{{name}}</view>
+    </view>
+    <view class='shopTemplate_price'>
+      <view>商品价格：{{price}}</view>
+    </view>
+    <view class='shopTemplate_snap'>
+      <button bindtap='shopBtn'>立即抢购</button>
+    </view>
+  </view>
+  </template>
+  <template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+
+  <!-- <template is='shopTemplate' data='{{...item}}' /> -->
+
+  
