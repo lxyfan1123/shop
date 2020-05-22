@@ -53,6 +53,7 @@
 <form bind:myEvent="onMyEvent" paramAtoB="{{copyRemark}}"></form>
 <custom id="bar"></custom>
 <button bindtap='getChildRun' data-tip-show="提示">获取子组件的ChildRun方法</button>
+<view>今天是2020年5月22日</view>
 
 
 
