@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    title: '用户组件title',
     // pageValue:"45555",
     copyRemark:"父组件的属性",
     nameTrans:"",
@@ -176,6 +177,14 @@ Page({
     this.setData({
       nameTrans: e.detail
     })
+  },
+  getChildRun(e){
+    console.log(e,e.currentTarget.dataset.tipShow)
+    var header = this.selectComponent("#bar")
+    console.log(header) //子组件的数据
+    header.getrun() //子组件的方法
+    console.log(header.getrun())
+
   }
 
 })

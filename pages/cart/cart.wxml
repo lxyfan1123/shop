@@ -51,6 +51,10 @@
         <slider name="slider" show-value step="5"></slider>
 </view>
 <form bind:myEvent="onMyEvent" paramAtoB="{{copyRemark}}"></form>
-<!-- <custom model:my-value="{{pageValue}}" />{{myValue}} -->
+<custom id="bar"></custom>
+<button bindtap='getChildRun' data-tip-show="提示">获取子组件的ChildRun方法</button>
+
+
+
 
 
