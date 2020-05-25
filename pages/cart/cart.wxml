@@ -64,6 +64,8 @@
   <text>本地代码推送到远程：</text>
   <text>1、git init———2、git add .——————3、git commit -m "初次提交"4、git remote add origin git@github.com:lxyfan1123/shop.git
     5、第一次推送（提交）代码时：git push -u origin master，若第一次推送后，直接使用该命令即可推送修改：git push origin master</text>
+    <text>执行完上面一句，有可能报错：fatal: refusing to merge unrelated histories</text>
+    <text>解决方案：git pull origin master --allow-unrelated-histories然后上传代码git push -u origin master </text>
   
 </view>
 
