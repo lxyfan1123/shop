@@ -54,6 +54,18 @@
 <custom id="bar"></custom>
 <button bindtap='getChildRun' data-tip-show="提示">获取子组件的ChildRun方法</button>
 <view>今天是2020年5月22日</view>
+<view>
+    <text>检测本地是否有ssh:cd ~/.ssh 此命令可以进入到.ssh文件目录</text> 
+    <text>生成ssh密钥:ssh-keygen -t rsa -C "lxyfan1123@163.com",执行完成后会有一些列提示输入密码的指令，直接回车即可</text>
+    <text>下一步是添加ssh,输入以下命令:ssh-add ~/.ssh/id_rsa</text>
+    <text >key的查看方式如下vim ~/.ssh/id_rsa.pub</text>
+</view>
+<view>
+  <text>本地代码推送到远程：</text>
+  <text>1、git init———2、git add .——————3、git commit -m "初次提交"4、git remote add origin git@github.com:lxyfan1123/shop.git
+    5、第一次推送（提交）代码时：git push -u origin master，若第一次推送后，直接使用该命令即可推送修改：git push origin master</text>
+  
+</view>
 
 
 
