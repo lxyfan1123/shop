@@ -55,6 +55,7 @@
 <button bindtap='getChildRun' data-tip-show="提示">获取子组件的ChildRun方法</button>
 <view>今天是2020年5月22日</view>
 <view>今天天气不好，阴天</view>
+<view>马上就到六月了，六一儿童节</view>
 
 
 
